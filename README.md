@@ -1,5 +1,5 @@
 # Gincana CAQuí 2020
- A gincana da semana de boas-vindas é realizada desde 2019 pelo Centro Acadêmico de Química (CAQuí), com o apoio do PET Química, da coordenação do curso e da UFPR como um todo. Este é o segundo ano em que o evento é realizado.
+ A gincana da semana de boas-vindas é realizada pelo Centro Acadêmico de Química (CAQuí), com o apoio do PET Química, da coordenação do curso e da UFPR como um todo.
 
 Ao longo da primeira semana de aula do ano é feita a proposta de que os calouros realizem uma série de atividades para acumular pontos e no final ganhar o prêmio. Isso proporciona uma integração entre calouros e veteranos, além de fazer com que os mais novos membros da UFPR conheçam seus serviços e instalações de maneira mais simplificada.
 
