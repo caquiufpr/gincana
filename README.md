@@ -1,3 +1,5 @@
+> Acesse o website em [caquiufpr.github.io/gincana](https://caquiufpr.github.io/gincana/)
+
 # Gincana CAQuí 2020
  A gincana da semana de boas-vindas é realizada pelo Centro Acadêmico de Química (CAQuí), com o apoio do PET Química, da coordenação do curso e da UFPR como um todo.
 
