@@ -34,7 +34,7 @@ activityList[27] =  'Raspar o cabelo';
 activityList[28] = 'Doar roupas';
 activityList[29] = 'Doar ração';
 activityList[30] = 'Carimbo de um professor de cada área';
-activityList[31] = 'Assinatura de pós graduandos (um por grupo de pesquisa)';
+activityList[31] = 'Assinatura de pós graduandos';
 
 var descriptions = [];
 
