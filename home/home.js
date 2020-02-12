@@ -40,10 +40,11 @@ function loadLeaderborad() {
     updateLB();
   });
 
+  // Display loaded data
   firebase.database().ref('/teams/15').once('value').then(function(snapshot) {
     inflateLB();
+    inflateACT();
   });
-
 }
 
 function inflateLB() {
@@ -157,6 +158,124 @@ firebase.database().ref('last_updated/date').on('value', function(snaps) {
   const spanDate = document.getElementById('lastUpdated');
   spanDate.innerHTML = handleDate(d);
 });
+
+// Inflate activities
+
+function inflateACT() {
+  document.getElementById('activities').style.display = 'block';
+  var stage = 1;
+
+  // Get holder
+  const actListHolder = document.getElementById('activities');
+
+  // Build cards from activity list
+  for (var i = 0; i < activityList.length; i++) {
+    // Skip null activities
+    if (activityList[i]) {
+      // Create Elements
+      const card = document.createElement('div');
+      const title = document.createElement('h2');
+      const description = document.createElement('p');
+      const img = document.createElement('img');
+      const actNumber = document.createElement('span');
+      // Infobox
+      const infobox = document.createElement('div');
+      const photoNumber = document.createElement('div');
+      const sendOn = document.createElement('div');
+      const needAnswer = document.createElement('div');
+      const veteran = document.createElement('div');
+
+      // Set classes
+      card.className = 'actCards';
+      title.className = 'actTitle';
+      description.className = 'actDesc';
+      img.className = 'actIcon';
+      actNumber.className = 'actNumber';
+
+      // Add information
+      title.innerHTML = activityList[i];
+      description.innerHTML = descriptions[i];
+      img.src = 'files/icons/'+i+'.svg';
+      actNumber.innerHTML = stage;
+      stage++;
+
+      // Setup Infobox
+      infobox.className = 'infobox';
+      photoNumber.className = 'chips';
+      sendOn.className = 'chips';
+      needAnswer.className = 'chips';
+      veteran.className = 'chips';
+
+      // Inflate infobox;
+
+      // Pictures to send;
+      if (onePicMode.includes(i+1)) {
+        photoNumber.innerHTML = "<img src='files/image/onePicMode.svg' class='chipimg'/>Uma imagem";
+        photoNumber.style.backgroundColor = '#673ab7';
+      } else if (somePicsMode.includes(i+1)) {
+        photoNumber.innerHTML = "<img src='files/image/somePicsMode.svg' class='chipimg'/>Várias imagens";
+        photoNumber.style.backgroundColor = '#e91e63';
+      } else if (videoMode.includes(i+1)) {
+        photoNumber.innerHTML = "<img src='files/image/videoMode.svg' class='chipimg'/>Vídeo";
+        photoNumber.style.backgroundColor = '#f44336';
+      } else {
+        photoNumber.style.display = 'none';
+      }
+
+      // Places to send
+      if (nonWebsite.includes(i)) {
+        sendOn.innerHTML = "<img src='files/image/noWebsite.svg' class='chipimg'/>Entrega presencial";
+        sendOn.style.backgroundColor = '#0097a7';
+      } else {
+        sendOn.innerHTML = "<img src='files/image/websiteMode.svg' class='chipimg'/>Envio pelo site";
+        sendOn.style.backgroundColor = '#ff9800';
+      }
+
+      // Need answers
+      if (needsInput.includes(i+1)) {
+        needAnswer.innerHTML = "<img src='files/image/answerNeeded.svg' class='chipimg'/>Precisa de resposta";
+        needAnswer.style.backgroundColor = '#009688';
+      } else {
+        needAnswer.style.display = 'none';
+      }
+
+      // Veteran needed
+      if (needsVeteran.includes(i)) {
+        veteran.innerHTML = "<img src='files/image/veteran.svg' class='chipimg'/>Veterano necessário";
+        veteran.style.backgroundColor = '#4caf50';
+      } else {
+        veteran.style.display = 'none';
+      }
+
+      // Append elements
+      card.appendChild(actNumber);
+      card.appendChild(img);
+      card.appendChild(title);
+      card.appendChild(description);
+      // Append infobox
+      infobox.appendChild(photoNumber);
+      infobox.appendChild(sendOn);
+      infobox.appendChild(needAnswer);
+      infobox.appendChild(veteran);
+      card.appendChild(infobox);
+      actListHolder.appendChild(card);
+    }
+  }
+
+  const atr = document.createElement('p');
+  atr.innerHTML = "Direitos Autorais";
+  atr.style.color = "#ffffff82";
+  atr.style.cursor = 'pointer';
+  atr.onclick = function() {
+    const x = document.getElementById('iconSrcs');
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  actListHolder.appendChild(atr);
+}
 
 function handleDate(date) {
   var day = ("0" + date.getDate()).slice(-2);

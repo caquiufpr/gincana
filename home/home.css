@@ -289,9 +289,7 @@ canvas {
   animation-duration: 2.2s;
 }
 
-/* Posts */
-
-#posts {
+.afterLeaderboard {
   margin-top: 820px;
   margin-bottom: 40px;
   position: absolute;
@@ -299,14 +297,20 @@ canvas {
   transform: translate(-50%, 0);
 }
 
-#pubTitle {
-  width: fit-content;
+/* Posts */
+
+#posts {
+  margin-bottom: 20px;
+  width: 40vw;
+  margin: auto;
+}
+
+.bodySectionTitle {
   color: white;
   text-align: center;
 }
 
 .postCard {
-  width: 40vw;
   height: fit-content;
   padding: 20px;
   background-color: white;
@@ -322,6 +326,86 @@ canvas {
 .postDate {
   font-size: small;
   margin: 0;
+}
+
+/* Activity list */
+
+#activities {
+  width: 96vw;
+  margin: auto;
+  text-align: center;
+}
+
+.actCards {
+  width: 16vw;
+  min-width: 200px;
+  height: 50vh;
+  max-height: 300px;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.28);
+  display: inline-block;
+  padding: 20px;
+  margin: 10px;
+  vertical-align: top;
+  border-radius: 4px;
+  position: relative;
+}
+
+.actIcon {
+  width: 60px;
+}
+
+.actTitle {
+  font-size: 12pt;
+  margin-top: 15px;
+}
+
+.actDesc {
+  font-size: 10pt;
+}
+
+.actNumber {
+  font-size: 8pt;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.infobox {
+  display: inline-flex;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.chips {
+  height: 20px;
+  border-radius: 15px;
+  background-color: gray;
+  width: 24px;
+  padding: 4px 2px 4px 2px;
+  vertical-align: middle;
+  line-height: 20px;
+  color: white;
+  font-size: 8pt;
+  display: inline-flex;
+  overflow: hidden;
+  margin: 2px;
+  overflow: hidden;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.chips:hover {
+    width: 130px;
+}
+
+.chipimg {
+  filter: invert();
+  margin-right: 1px;
 }
 
 /* Opening Animation */
@@ -617,8 +701,25 @@ i.menuIcons {
     to {width: 90vw; max-height:56px};
   }
   .postCard {
-    width: 80vw;
     margin: 0;
     margin-bottom: 2vw;
+  }
+  #posts {
+    width: 80vw;
+  }
+  .actCards {
+    width: 80vw;
+    height: fit-content;
+    max-height: none;
+  }
+  .actIcon {
+    width: 20vw;
+    height: 20vw;
+  }
+  .actTitle {
+    font-size: 16pt;
+  }
+  .actDesc {
+    font-size: 12pt;
   }
 }

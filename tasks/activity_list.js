@@ -59,7 +59,7 @@ descriptions[17] = 'Vídeo subindo ou descendo as rampas do prédio D. Pedro I, 
 descriptions[18] = 'Selfie no intercampi.';
 descriptions[19] = 'Foto em frente ao Centro Acadêmico de Música.';
 descriptions[20] = 'Foto de um componente da equipe fazendo embaixadinhas no campo de futebol do SEPT.';
-descriptions[21] = 'Foto medindo a passarela entre o hall do prédio de ADM e a biblioteca com palitos de fósforo. Não esqueça de botar o número de palitos abaixo.';
+descriptions[21] = 'Foto medindo a passarela entre o hall do prédio de ADM e a biblioteca com palitos de fósforo e o número de palitos.';
 descriptions[22] = 'Foto com a formanda Maria D. Barbosa.';
 descriptions[24] = 'Contar o número de bebedouros dentro do Espinha de Peixe.';
 descriptions[25] = 'Abraçar pessoas na fila do RU. Cada foto abraçando uma pessoa vale 30 pontos, porém é necessário ter abraçado no mínimo 10 para a atividade ser validada.';
@@ -104,3 +104,11 @@ function getPoints(i, text) {
     return points[i];
   }
 }
+
+const onePicMode = [3,5,7,8,9,10,11,12,13,15,16,17,19,20,21,22,23,25,28];
+const somePicsMode = [2,14,26];
+const videoMode = [6,18];
+const urlMode = [1];
+const needsInput = [5,17,22,25];
+const nonWebsite = [28,29,30,31]
+const needsVeteran = [5,8,10,12]; // Example data
