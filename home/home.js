@@ -267,7 +267,7 @@ function inflateACT() {
   }
 
   const atr = document.createElement('p');
-  atr.innerHTML = "Direitos Autorais";
+  atr.innerHTML = "Criado por Vicente K. Parmigiani • <u>Direitos autorais de terceiros<u>";
   atr.style.color = "#ffffff82";
   atr.style.cursor = 'pointer';
   atr.onclick = function() {
@@ -334,7 +334,6 @@ function stopConfetti() {
 
 // Header shadow
 
-headerShadow();
 function headerShadow() {
 	if (document.body.scrollTop == 0 || document.documentElement.scrollTop == 0){
 		document.getElementById("header").className = "headerNoShadow";
@@ -342,6 +341,34 @@ function headerShadow() {
   if (document.body.scrollTop != 0 || document.documentElement.scrollTop != 0) {
 		document.getElementById("header").className = "";
 	}
+
+  // Remove lag when canvasis out of the screen;
+  if (elementInViewport2(document.getElementById('canvas'))) {
+    activateInterval();
+  } else {
+    deactivateInterval();
+  }
+}
+headerShadow();
+
+function elementInViewport2(el) {
+  var top = el.offsetTop;
+  var left = el.offsetLeft;
+  var width = el.offsetWidth;
+  var height = el.offsetHeight;
+
+  while(el.offsetParent) {
+    el = el.offsetParent;
+    top += el.offsetTop;
+    left += el.offsetLeft;
+  }
+
+  return (
+    top < (window.pageYOffset + window.innerHeight) &&
+    left < (window.pageXOffset + window.innerWidth) &&
+    (top + height) > window.pageYOffset &&
+    (left + width) > window.pageXOffset
+  );
 }
 
 // Default code
