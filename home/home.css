@@ -359,6 +359,7 @@ canvas {
 .actTitle {
   font-size: 12pt;
   margin-top: 15px;
+  margin-bottom: 0px;
 }
 
 .actDesc {
@@ -370,6 +371,11 @@ canvas {
   font-weight: bold;
   display: block;
   margin-bottom: 20px;
+}
+
+.points {
+  font-size: 10pt;
+  color: green;
 }
 
 .infobox {
@@ -722,5 +728,11 @@ i.menuIcons {
   }
   .actDesc {
     font-size: 12pt;
+  }
+  .points {
+    font-size: 12pt;
+  }
+  .actNumber {
+    font-size: 10pt;
   }
 }

@@ -178,6 +178,7 @@ function inflateACT() {
       const description = document.createElement('p');
       const img = document.createElement('img');
       const actNumber = document.createElement('span');
+      const pointsAct = document.createElement('span');
       // Infobox
       const infobox = document.createElement('div');
       const photoNumber = document.createElement('div');
@@ -191,12 +192,14 @@ function inflateACT() {
       description.className = 'actDesc';
       img.className = 'actIcon';
       actNumber.className = 'actNumber';
+      pointsAct.className = 'points'
 
       // Add information
       title.innerHTML = activityList[i];
       description.innerHTML = descriptions[i];
       img.src = 'files/icons/'+i+'.svg';
       actNumber.innerHTML = stage;
+      pointsAct.innerHTML = "+"+getPoints(i, true);
       stage++;
 
       // Setup Infobox
@@ -251,6 +254,7 @@ function inflateACT() {
       card.appendChild(actNumber);
       card.appendChild(img);
       card.appendChild(title);
+      card.appendChild(pointsAct);
       card.appendChild(description);
       // Append infobox
       infobox.appendChild(photoNumber);

@@ -111,4 +111,4 @@ const videoMode = [6,18];
 const urlMode = [1];
 const needsInput = [5,17,22,25];
 const nonWebsite = [28,29,30,31]
-const needsVeteran = [5,8,10,12]; // Example data
+const needsVeteran = [5,8,25];
