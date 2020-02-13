@@ -20,9 +20,25 @@ var firebaseConfig = {
 var storageRef = firebase.storage().ref().child('review');
 const teamNames = ["Hidrogênio","Hélio","Lítio","Berílio","Boro","Carbono","Nitrogênio","Oxigênio","Flúor","Neônio","Sódio","Magnésio","Alumínio","Silício","Fósforo","Enxofre"];
 const teamColors = ["#005c8d","#c43030","#d1ad1e","#00b661","#94007e","#4d4d4d","#e7660b","#00b87e","#e91e63","#009ae6","#9e9c00","#00a89b","#a9a9a9","#172c88","#653c32","#01be87"];
-const needsInput = [5,17,22,25];
-const onePicMode = [3,5,7,8,9,10,11,12,13,15,16,17,19,20,21,22,23,25];
-const somePicsMode = [2,14,26,27];
+
+// Inflate interface
+
+function inflateInterface() {
+  const listHolder = document.getElementById('activitiesHolder');
+  var state = 1
+  for (var i = 0; i < activityList.length; i++) {
+    if (activityList[i]) {
+      const title = document.createElement('h3');
+      title.innerHTML = state + ". " + activityList[i];
+      const reviewBox = document.createElement('span');
+      reviewBox.id = "review" + (i+1);
+      reviewBox.className = "reviewBox";
+      listHolder.appendChild(title);
+      listHolder.appendChild(reviewBox);
+      state++;
+    }
+  }
+}
 
 // Getting posts from activity 1 and videos
 
@@ -245,7 +261,7 @@ function inflateMoreInfo(snapshot) {
     dataToFill.innerHTML += "Resposta: Não é necessária<br/>";
   }
 
-  dataToFill.innerHTML += "Data do envio: " + Date(sentOnDate);
+  dataToFill.innerHTML += "Data do envio: " + new Date(sentOnDate);
 
   sentData.appendChild(dataToFill);
 }
@@ -431,6 +447,8 @@ function loadPage() {
       document.getElementById('userName').innerHTML = name;
       document.getElementById('userEmail').innerHTML = email;
       document.getElementById("userPhoto").style.backgroundImage = "url('"+photoUrl+"')";
+
+      inflateInterface();
     }
   });
 }

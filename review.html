@@ -14,61 +14,12 @@
 			<h1>Revisar atividades enviadas</h1>
 			<p>O acesso à esta página e suas informações é garantido apenas a gerenciadores.
 			Não sendo esse seu caso, retorne ao início.</p>
-			<h3>Atividade 1 | Post com hashtags</h3>
-			<span id="review1" class="reviewBox"></span>
-			<h3>Atividade 2 | Doar sangue</h3>
-			<span id="review2" class="reviewBox"></span>
-			<h3>Atividade 3 | Doar cabelos</h3>
-			<span id="review3" class="reviewBox"></span>
-			<h3>Atividade 5 | Contar os degraus da PA</h3>
-			<span id="review5" class="reviewBox"></span>
-			<h3>Atividade 6 | Parabéns no RU</h3>
-			<span id="review6" class="reviewBox"></span>
-			<h3>Atividade 7 | Ir para a pré-história</h3>
-			<span id="review7" class="reviewBox"></span>
-			<h3>Atividade 8 | Biblioteca do biológicas</h3>
-			<span id="review8" class="reviewBox"></span>
-			<h3>Atividade 9 | Ferradura do PET EQ</h3>
-			<span id="review9" class="reviewBox"></span>
-			<h3>Atividade 10 | Fibra</h3>
-			<span id="review10" class="reviewBox"></span>
-			<h3>Atividade 11 | Cadastro da Biblioteca</h3>
-			<span id="review11" class="reviewBox"></span>
-			<h3>Atividade 12 | CASA 3</h3>
-			<span id="review12" class="reviewBox"></span>
-			<h3>Atividade 13 | Gralha Azul</h3>
-			<span id="review13" class="reviewBox"></span>
-			<h3>Atividade 14 | Esferas do Dragão</h3>
-			<span id="review14" class="reviewBox"></span>
-			<h3>Atividade 15 | Trilha do Botânico</h3>
-			<span id="review15" class="reviewBox"></span>
-			<h3>Atividade 16 | Prédio da UFPR no MusA</h3>
-			<span id="review16" class="reviewBox"></span>
-			<h3>Atividade 17 | Janelas do Rebouças</h3>
-			<span id="review17" class="reviewBox"></span>
-			<h3>Atividade 18 | Revezamento de vídeo nas rampas</h3>
-			<span id="review18" class="reviewBox"></span>
-			<h3>Atividade 19 | Selfie no intercampi</h3>
-			<span id="review19" class="reviewBox"></span>
-			<h3>Atividade 20 | CA de Música</h3>
-			<span id="review20" class="reviewBox"></span>
-			<h3>Atividade 21 | Embaixadinhas no SEPT</h3>
-			<span id="review21" class="reviewBox"></span>
-			<h3>Atividade 22 | Medir passarela com palito de fósforo</h3>
-			<span id="review22" class="reviewBox"></span>
-			<h3>Atividade 23 | Foto com Maria D. Barbosa</h3>
-			<span id="review23" class="reviewBox"></span>
-			<h3>Atividade 25 | Hidrantes do Espinha de Peixe</h3>
-			<span id="review25" class="reviewBox"></span>
-			<h3>Atividade 26 | Abraçar pessoas na fila do RU</h3>
-			<span id="review26" class="reviewBox"></span>
-			<h3>Atividade 27 | Raspar o cabelo</h3>
-			<span id="review27" class="reviewBox"></span>
+			<div id="activitiesHolder"></div>
 			<br/><div class="markAsDone">
 				<p>Insira o número da equipe e a atividade a ser marcada como concluída na
 					base de dados:<br/>
-					<input type="number" min="1" max="9" id="masdTeam" placeholder="Equipe">
-					<input type="number" min="1" max="27" id="masdActivity" placeholder="Atividade">
+					<input type="number" min="1" max="16" id="masdTeam" placeholder="Equipe">
+					<input type="number" min="1" max="32" id="masdActivity" placeholder="Atividade">
 					<button type="button" name="button" class="button3" onclick="markAsDone(0)">Marcar como OK</button>
 					<button type="button" name="button" class="button3" onclick="markAsDone(1)">Remover registro</button>
 				</p>
@@ -139,6 +90,7 @@
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-auth.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-storage.js"></script>
 
+		<script type="text/javascript" src="tasks/activity_list.js"></script>
 		<script type="text/javascript" src="review/review.js" onload="loadPage()"></script>
 	</body>
 </html>

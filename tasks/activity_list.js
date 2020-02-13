@@ -28,7 +28,7 @@ activityList[21] =  'Medir a passarela entre o hall do ADM e a biblioteca com pa
 activityList[22] =  'Tirar foto com a formanda Maria D. Barbosa';
 activityList[23] = null;
 activityList[24] =  'Contar os bebedouros no Espinha de Peixe';
-activityList[25] =  'Abraçar 10 ou mais pessoas na fila do RU';
+activityList[25] =  'Abraçar pessoas na fila do RU';
 activityList[26] =  null
 activityList[27] =  'Raspar o cabelo';
 activityList[28] = 'Doar roupas';
@@ -62,7 +62,7 @@ descriptions[20] = 'Foto de um componente da equipe fazendo embaixadinhas no cam
 descriptions[21] = 'Foto medindo a passarela entre o hall do prédio de ADM e a biblioteca com palitos de fósforo e o número de palitos.';
 descriptions[22] = 'Foto com a formanda Maria D. Barbosa.';
 descriptions[24] = 'Contar o número de bebedouros dentro do Espinha de Peixe.';
-descriptions[25] = 'Abraçar pessoas na fila do RU. Cada foto abraçando uma pessoa vale 30 pontos, porém é necessário ter abraçado no mínimo 10 para a atividade ser validada.';
+descriptions[25] = 'Cada foto abraçando uma pessoa vale 30 pontos, acumulando no máximo 300 pontos para a atividade.';
 descriptions[26] = null;
 descriptions[27] = 'Um integrante da equipe deve raspar o cabelo.';
 descriptions[28] = 'Doação de peças de roupa diretamente no Centro Acadêmico durante a semana.';
@@ -70,7 +70,7 @@ descriptions[29] = 'Doação de ração para cachorros até o dia da entrega na 
 descriptions[30] = 'Carimbo de um professor de cada uma das 5 áreas da química.'
 descriptions[31] = 'Assinatura pós graduandos, sendo uma por grupo de pesquisa.'
 
-const points = [25,700,null,null,200,400,100,300,200,300,100,100,100,100,100,300,500,500,200,300,300,500,300,null,400,400,null,300,50,25,100,50];
+const points = [25,700,null,null,200,400,100,300,200,300,100,100,100,100,100,300,500,500,200,300,300,500,300,null,400,30,null,300,50,25,100,50];
 
 function getPoints(i, text) {
 
@@ -93,6 +93,7 @@ function getPoints(i, text) {
     desc[0] = '/foto';
     desc[1] = '/pessoa';
     desc[13] = '/esfera';
+    desc[25] = '/abraço';
     desc[28] = '/peça';
     desc[29] = '/kg';
     desc[30] = '/carimbo';
