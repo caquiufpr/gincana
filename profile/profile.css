@@ -232,18 +232,17 @@ h2 {
   background: linear-gradient(to bottom right, #616161, #424242);
   color: white;
 }
-
 .team1 {
   background: linear-gradient(to bottom right, #007ec2, #005c8d);
 }
 .team2 {
-  background: linear-gradient(to bottom right, #00b862, #008547);
-}
-.team3 {
   background: linear-gradient(to bottom right, #c53030, #9c2626);
 }
-.team4 {
+.team3 {
   background: linear-gradient(to bottom right, #FFC107, #FFB300);
+}
+.team4 {
+  background: linear-gradient(to bottom right, #00b862, #008547);
 }
 .team5 {
   background: linear-gradient(to bottom right, #8b14b3, #610d7b);
