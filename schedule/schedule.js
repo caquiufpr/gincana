@@ -145,13 +145,21 @@ if (window.innerWidth > 800) {
   buildSchedule()
 }
 
+firebase.database().ref('schedule').once('value').then(function() {
+  document.getElementById('loading').style.display = "none";
+  document.getElementById('hiddenBody').style.display = "block";
+})
+
 // inflateInfo
+const colors = ["#a5d6a7","#c4c4c4","#fff49d","#fdc391","",""];
 
 function inflateInfo(eventNumber) {
   firebase.database().ref('schedule/'+eventNumber).once('value').then(function(snap) {
     document.getElementById('eventTitle').innerHTML = snap.val().title;
     document.getElementById('eventDescription').innerHTML = (snap.val().desc) ? snap.val().desc : "Descrição não informada.";
     document.getElementById('cube').className = "mode"+snap.val().type;
+    document.getElementById('modalImage').style.backgroundImage = "url('./files/image/bg"+snap.val().type+".svg')";
+    document.getElementById('modalImage').style.backgroundColor = colors[snap.val().type];
     openModal();
   })
 }

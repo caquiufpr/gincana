@@ -28,8 +28,19 @@ table {
 }
 
 .titleDiv {
-  margin-top: 100px;
+  margin-top: 200px;
   display: flex;
+}
+
+#modalImage {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 4px;
 }
 
 #cube {
@@ -103,6 +114,7 @@ table {
   min-height: 30vh;
   border-radius: 4px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 /* The Close Button */
@@ -111,6 +123,10 @@ table {
   float: left;
   font-size: 28px;
   font-weight: bold;
+  z-index: 100000;
+  position: absolute;
+  top: 2%;
+  left: 2%;
 }
 
 .close:hover,

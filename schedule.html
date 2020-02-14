@@ -11,17 +11,21 @@
 	<body onscroll="headerShadow()">
 		<div id="body">
 			<h1>Programação</h1>
-			<table id="table" cellspacing="5" cellpadding="5" style="display:none">
-				<tr>
-					<th style="width:5vw;">Horário</th>
-					<th>Segunda</th>
-					<th>Terça</th>
-					<th>Quarta</th>
-					<th>Quinta</th>
-					<th>Sexta</th>
-				</tr>
-			</table>
-			<span id="schedule"></span>
+			<p>A programação poderá ser modificada durante a semana.<br/>Confira aqui o cronograma mais recente.</p>
+			<h2 id="loading">Carregando informações...</h2>
+			<div id="hiddenBody" style="display:none">
+				<table id="table" cellspacing="5" cellpadding="5" style="display:none">
+					<tr>
+						<th style="width:5vw;">Horário</th>
+						<th>Segunda</th>
+						<th>Terça</th>
+						<th>Quarta</th>
+						<th>Quinta</th>
+						<th>Sexta</th>
+					</tr>
+				</table>
+				<span id="schedule"></span>
+			</div>
 		</div>
 
 		<div id="header" class="headerNoShadow">
@@ -43,7 +47,7 @@
 		<div id="modal" class="modal">
 			<div class="modal-content">
 				<span class="close"><i class="material-icons" md-24 md-light style="vertical-align: middle;padding: 10px;">arrow_back</i></span>
-				<br/>
+				<div id="modalImage"></div>
 				<div class="titleDiv">
 					<div id="cube"></div>
 					<h1 id="eventTitle"></h1>
