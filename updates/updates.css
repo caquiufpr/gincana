@@ -311,7 +311,7 @@ i.menuIcons {
 
 /* Mobile adjustments */
 
-@media all and (max-width: 43em) {
+@media all and (max-width: 50em) {
   #menu {
     background-color: white;
     width: 60vw;

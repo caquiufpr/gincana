@@ -1,45 +1,123 @@
-#canvas {
-  margin-top: -10vh;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#image {
-  width: 90vw;
-  height: 40vw;
-  display: none;
-  top: 30%;
-}
-
-.hide {
-  display: none;
-}
-
-/* Useful code */
-p {
-  max-width: 40vw;
-  width: fit-content;
+td, th {
+  width: 14vw;
   text-align: center;
-  top: 75%;
 }
 
-h1 {
-  text-align: center;
-  top: 65%;
-  width: fit-content;
-  max-width: 90vw;
+@media all and (max-width: 800px)  {
+  td, th {
+    width: 70vw;
+    text-align: center;
+  }
+}
+
+table {
+  margin-bottom: 50px;
+}
+
+.hasContent {
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  border: 1px solid #565656;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+
+.hasContent:hover {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.28);
+}
+
+.titleDiv {
+  margin-top: 100px;
+  display: flex;
+}
+
+#cube {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-top: 11px;
+}
+
+#eventTitle {
+  margin: 0;
+  margin-left: 10px;
+}
+
+/* Modes */
+
+/* Integração */
+.mode0 {
+  background-color: #5BB974;
+}
+/* Palestras de Instâncias da Faculdade */
+.mode1 {
+  background-color: #F1F3F4;
+  color: #434343;
+}
+/* Atividades recreativas */
+.mode2 {
+  background-color: #FBBC04;
+}
+/* Áreas da Química */
+.mode3 {
+  background-color: #F27405;
+}
+/* Almoço e Jantar */
+.mode4 {
+  background-color: #FAD2CF;
+  color: #434343;
+}
+/* Palestras */
+.mode5 {
+  background-color: #174EA6;
 }
 
 #body {
-  padding-top: 100px;
+  padding-left: 5vw;
+  padding-top: 80px;
 }
 
-.center {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0%);
+/* Modal */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 100px auto;
+  padding: 30px;
+  width: 50vw;
+  min-height: 30vh;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: left;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Default Style */
@@ -61,10 +139,12 @@ body {
   top: 0%;
   left: 0%;
   z-index: 99;
+  background-color: white;
 }
 
 #header.headerNoShadow {
   box-shadow: 0px 0px 0px rgba(0,0,0,0.0);
+  background-color: white;
 }
 
 .headerImage {
@@ -198,6 +278,16 @@ i.menuIcons {
   display: inline;
 }
 
+@media all and (max-width: 70em) {
+  .podiumImage {
+    width: 30vh;
+    height: 30vh;
+  }
+  .podium {
+    margin-top: 5vh;
+  }
+}
+
 /* Mobile adjustments */
 
 @media all and (max-width: 50em) {
@@ -240,11 +330,19 @@ i.menuIcons {
   i.menuIcons {
     display: inline-block;
   }
-  p {
+  p, li {
     max-width: 90vw;
-    font-size: 4vw;
   }
-  h1 {
-    font-size: 6.5vw;
+  .modal-content {
+    margin: 0;
+    padding: 30px;
+    width: 85vw;
+    min-width: 15em;
+    border-radius: 0px;
+    z-index: 1000;
+    min-height: -webkit-fill-available;
+  }
+  .modal {
+    z-index: 100;
   }
 }
