@@ -36,7 +36,6 @@ table {
   border-radius: 8px;
   background: white;
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .titleDiv {
@@ -69,6 +68,29 @@ table {
 #eventTitle {
   margin: 0;
   margin-left: 10px;
+}
+
+#eventDescription {
+  text-align: justify;
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+
+#eventDate {
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.modal2Desc {
+  position: absolute;
+  left: 0;
+  padding: 5%;
+  width: 90%;
+  border-radius: 8px;
+  background: white;
+  padding-top: 5px;
+  padding-bottom: 50px;
 }
 
 /* Modes */
@@ -375,5 +397,8 @@ i.menuIcons {
   }
   .modal {
     z-index: 100;
+  }
+  #modalImage {
+    border-radius: 0;
   }
 }

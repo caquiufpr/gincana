@@ -72,6 +72,7 @@ function buildTable() {
   })
 }
 
+const weekDays = ['Segunda','Terça','Quarta','Quinta','Sexta'];
 function buildSchedule() {
   const globalHolder = document.getElementById('schedule');
 
@@ -79,7 +80,6 @@ function buildSchedule() {
     var hour = 9;
     var min = "00";
 
-    const weekDays = ['Segunda','Terça','Quarta','Quinta','Sexta'];
     const table = document.createElement('table');
     const title = document.createElement('h2');
     title.innerHTML = weekDays[i]+"-Feira";
@@ -157,11 +157,32 @@ function inflateInfo(eventNumber) {
   firebase.database().ref('schedule/'+eventNumber).once('value').then(function(snap) {
     document.getElementById('eventTitle').innerHTML = snap.val().title;
     document.getElementById('eventDescription').innerHTML = (snap.val().desc) ? snap.val().desc : "Descrição não informada.";
+    document.getElementById('eventDate').innerHTML = getDate(snap);
     document.getElementById('cube').className = "mode"+snap.val().type;
     document.getElementById('modalImage').style.backgroundImage = "url('./files/image/bg"+snap.val().type+".svg')";
     document.getElementById('modalImage').style.backgroundColor = colors[snap.val().type];
     openModal();
   })
+}
+
+function getDate(snap) {
+  const weekDay = snap.val().week_day;
+  var startTime = snap.val().start_time;
+  var endTime = snap.val().end_time;
+
+  var output = weekDays[weekDay] +", ";
+  var time = startTime + (startTime - endTime);
+
+  startTime = startTime * .5 + 9;
+  var hour = (Number.isInteger(startTime)) ? startTime : parseInt(startTime);
+  var min = (Number.isInteger(startTime)) ? "00" : "30";
+  output += hour + "h" + min + " - ";
+  endTime = endTime * .5 + 9.5;
+  hour = (Number.isInteger(endTime)) ? endTime : parseInt(endTime);
+  var min = (Number.isInteger(endTime)) ? "00" : "30";
+  output += hour + "h" + min;
+
+  return output;
 }
 
 // Default code
