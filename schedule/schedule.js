@@ -312,14 +312,14 @@ function openModal(v) {
 
   span.onclick = function() {
     modal.style.display = "none";
-    window.location.hash = "";
+    history.pushState('', document.title, window.location.pathname);
     document.getElementById('modalImage').style.backgroundImage = "";
   }
 
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
-      window.location.hash = "";
+      history.pushState('', document.title, window.location.pathname);
       document.getElementById('modalImage').style.backgroundImage = "";
     }
   }
