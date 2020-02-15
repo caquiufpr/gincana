@@ -151,7 +151,7 @@ firebase.database().ref('schedule').once('value').then(function() {
 })
 
 // inflateInfo
-const colors = ["#a5d6a7","#c4c4c4","#fff49d","#fdc391","",""];
+const colors = ["#a5d6a7","#c4c4c4","#fff49d","#fdc391","#FAD2CF","#c5d8f7"];
 
 function inflateInfo(eventNumber) {
   firebase.database().ref('schedule/'+eventNumber).once('value').then(function(snap) {
@@ -281,11 +281,13 @@ function openModal() {
 
   span.onclick = function() {
     modal.style.display = "none";
+    document.getElementById('modalImage').style.backgroundImage = "";
   }
 
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
+      document.getElementById('modalImage').style.backgroundImage = "";
     }
   }
 }
