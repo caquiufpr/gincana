@@ -116,14 +116,11 @@ function validateURL(status, id, activity) {
     });
 
     update();
-    /*
-      Obs: Some errors were happening while adding the "ok" to the activity list,
-      so it has been removed from here. Maybe in the future there will be a button
-      to add it manually.
-    */
+    sendAnal(activity, "Approved");
 
   } else {
     oldRef.remove();
+    sendAnal(activity, "Rejected");
   }
   document.getElementById('d/'+data[1]+'/'+data[2]+'/'+data[3]).style.display = "none";
 }
@@ -142,8 +139,10 @@ function markAsDone(mode) {
         time: Date.now()
       });
       update();
+      sendAnal(theActivity, "Approved");
     } else {
       firebase.database().ref('teams/'+theTeam+"/tasks/"+theActivity).remove();
+      sendAnal(theActivity, "Rejected");
     }
     alert('Atividade atualizada.');
   } else {
@@ -332,6 +331,7 @@ function accept(id) {
   document.getElementById(id).style.display = "none";
   document.getElementById('myModal').style.display = 'none';
   update();
+  sendAnal(teamActivity[1], "Approved");
 }
 
 function reject(id) {
@@ -356,6 +356,7 @@ function reject(id) {
 
   document.getElementById('myModal').style.display = 'none';
   update();
+  sendAnal(teamActivity, "Rejected");
 }
 
 const reasonsDesc = ["Integrante da equipe não aparece","Crachá da equipe não visível","Local de realização da atividade incorreto","Resposta da atividade incorreta"];
@@ -394,6 +395,13 @@ function update() {
   firebase.database().ref('last_updated').set({
   date: Date.now()
   });
+}
+
+function sendAnal(activity, status) {
+  firebase.analytics().logEvent('activity_reviewed', {
+    activity: activity,
+    status: status,
+  })
 }
 
 // Default Code

@@ -119,6 +119,7 @@ function setTeam(teamNumber) {
     firebase.database().ref('teams/'+(teamNumber-1)).once('value').then(function(snap) {
       document.getElementById('points').innerHTML = snap.val().points;
     })
+    firebase.analytics().setUserProperties({team: teamName});
   } else {
     document.getElementById("unknownTeam").className = "center";
     document.getElementById("loadingTeam").className = "hide";
