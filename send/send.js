@@ -15,6 +15,7 @@ var firebaseConfig = {
 
 // My code
 
+const teamNames = ["Hidrogênio","Hélio","Lítio","Berílio","Boro","Carbono","Nitrogênio","Oxigênio","Flúor","Neônio","Sódio","Magnésio","Alumínio","Silício","Fósforo","Enxofre"];
 var currentMode = null;
 var itemSelected = -1;
 
@@ -260,12 +261,12 @@ function send() {
   }
 }
 
-// firebase analytics (not working)
+// firebase analytics
 
 function recordSendFB(activity, team) {
   firebase.analytics().logEvent('send_activity', {
     activity: activity,
-    team: team
+    team: teamNames[team];
   })
 }
 
