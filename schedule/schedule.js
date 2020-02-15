@@ -161,7 +161,7 @@ function inflateInfo(eventNumber) {
     document.getElementById('cube').className = "mode"+snap.val().type;
     document.getElementById('modalImage').style.backgroundImage = "url('./files/image/bg"+snap.val().type+".svg')";
     document.getElementById('modalImage').style.backgroundColor = colors[snap.val().type];
-    openModal();
+    openModal(eventNumber);
   })
 }
 
@@ -295,19 +295,31 @@ function openMenu() {
 
 // Modal popup
 const modal = document.getElementById("modal");
-function openModal() {
+function openModal(v) {
+
+  // https://gist.github.com/thedamon/9276193
+  var hash = v;
+	window.location.hash = hash;
+	window.onhashchange = function() {
+		if (!location.hash){
+			modal.style.display = "none";
+		}
+	}
+
   var span = document.getElementsByClassName("close")[0];
 
   modal.style.display = "block";
 
   span.onclick = function() {
     modal.style.display = "none";
+    window.location.hash = "";
     document.getElementById('modalImage').style.backgroundImage = "";
   }
 
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
+      window.location.hash = "";
       document.getElementById('modalImage').style.backgroundImage = "";
     }
   }
