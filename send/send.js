@@ -266,7 +266,7 @@ function send() {
 function recordSendFB(activity, team) {
   firebase.analytics().logEvent('send_activity', {
     activity: activity,
-    team: teamNames[team];
+    team: teamNames[team]
   })
 }
 
