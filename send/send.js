@@ -229,7 +229,7 @@ function send() {
       var hasRecorded = false;
 
       for (var i = 0; i < 28; i++) {
-        if (itemSelected == needsInput[i] && itemSelected != 0) {
+        if (itemSelected == needsInput[i] || itemSelected == urlMode[i]) {
           firebase.database().ref('review/Activity '+itemSelected+'/'+team).set({
               number: taskAnswer,
               sentBy: currentUser.displayName,
