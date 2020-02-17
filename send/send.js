@@ -228,8 +228,8 @@ function send() {
       const taskAnswer = document.getElementById('taskAnswerValue').value;
       var hasRecorded = false;
 
-      for (var i = 0; i < 28; i++) {
-        if (itemSelected == needsInput[i] || itemSelected == urlMode[i]) {
+      for (var i = 0; i <= 31; i++) {
+        if (itemSelected == needsInput[i]) {
           firebase.database().ref('review/Activity '+itemSelected+'/'+team).set({
               number: taskAnswer,
               sentBy: currentUser.displayName,
@@ -237,9 +237,7 @@ function send() {
               sentOn: Date.now(),
           })
           hasRecorded = true;
-        }
-
-        if (itemSelected == somePicsMode[i]) {
+        } else if (itemSelected == somePicsMode[i]) {
           for (var i = 0; i < imageId.length; i++) {
             firebase.database().ref('review/Activity '+itemSelected+'/'+team+'/'+imageId[i].key).set({
                 sentBy: currentUser.displayName,
@@ -247,6 +245,8 @@ function send() {
                 sentOn: Date.now(),
             })
           }
+          hasRecorded = true;
+        } else if (itemSelected == urlMode[i]) {
           hasRecorded = true;
         }
       }
