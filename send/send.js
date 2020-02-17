@@ -204,7 +204,7 @@ function send() {
         case 3: // URL mode0Holder
           const mode1input = document.getElementById('mode1input');
           if (itemSelected == 1) {
-            var dbRef = firebase.database().ref('review/Activity 1').push();
+            var dbRef = firebase.database().ref('review/Activity '+itemSelected).push();
             dbRef.set({
               team: team,
               sentBy: currentUser.displayName,
@@ -229,7 +229,7 @@ function send() {
       var hasRecorded = false;
 
       for (var i = 0; i < 28; i++) {
-        if (itemSelected == needsInput[i]) {
+        if (itemSelected == needsInput[i] && itemSelected != 0) {
           firebase.database().ref('review/Activity '+itemSelected+'/'+team).set({
               number: taskAnswer,
               sentBy: currentUser.displayName,

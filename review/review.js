@@ -444,6 +444,8 @@ function loadPage() {
   var user = firebase.auth().currentUser;
   var name, email, photoUrl, uid, emailVerified;
 
+  var inflateState = true;
+
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       name = user.displayName;
@@ -456,7 +458,11 @@ function loadPage() {
       document.getElementById('userEmail').innerHTML = email;
       document.getElementById("userPhoto").style.backgroundImage = "url('"+photoUrl+"')";
 
-      inflateInterface();
+      if (inflateState) {
+        inflateInterface();
+        inflateState = false;
+      }
+
     }
   });
 }
