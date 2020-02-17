@@ -246,7 +246,7 @@ function send() {
             })
           }
           hasRecorded = true;
-        } else if (itemSelected == urlMode[i]) {
+        } else if (itemSelected == urlMode[i] || itemSelected == videoMode[i]) {
           hasRecorded = true;
         }
       }
