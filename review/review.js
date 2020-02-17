@@ -100,7 +100,7 @@ function validateURL(status, id, activity) {
   var newRef = firebase.database().ref("approved/Activity "+activity+"/"+data[2]);
   if (status == true) {
     moveFbRecord(oldRef, newRef); // Move activity location
-    var teamRef = firebase.database().ref('teams/'+(Number(data[1])-1));
+    var teamRef = firebase.database().ref('teams/'+(Number(data[1])));
     teamRef.transaction(function(tra) { // Update team punctuation
       if (tra) {
         if (tra.points) {
