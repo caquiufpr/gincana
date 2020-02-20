@@ -213,17 +213,20 @@ function inflateReview(id) {
   document.getElementById('md-actnum').innerHTML = "Atividade "+ data[1];
   document.getElementById('md-actdesc').innerHTML = descriptions[data[1]-1];
 
+  var hasntWorked = true;
   for (var i = 0; i <= 28; i++) {
     if (data[1] == somePicsMode[i]) {
       firebase.database().ref('review/Activity '+data[1]+'/'+(Number(data[2])+1)+'/'+data[3].substring(0, data[3].length - 4)).once('value').then(function(snapshot) {
         inflateMoreInfo(snapshot);
       });
-      break;
-    } else {
-      firebase.database().ref('review/Activity '+data[1]+'/'+(Number(data[2])+1)).once('value').then(function(snapshot) {
-        inflateMoreInfo(snapshot);
-      });
+      hasntWorked = false;
     }
+  }
+
+  if (hasntWorked) {
+    firebase.database().ref('review/Activity '+data[1]+'/'+(Number(data[2])+1)).once('value').then(function(snapshot) {
+      inflateMoreInfo(snapshot);
+    });
   }
 
   // Make the buttons 'clickable'
