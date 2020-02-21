@@ -121,6 +121,10 @@ table {
 .mode5 {
   background-color: #174EA6;
 }
+/* Empty */
+.mode6 {
+  visibility: hidden;
+}
 
 #body {
   padding-left: 5vw;
