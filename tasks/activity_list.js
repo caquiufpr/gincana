@@ -61,14 +61,14 @@ descriptions[19] = 'Foto em frente ao Centro Acadêmico de Música.';
 descriptions[20] = 'Foto de um componente da equipe fazendo embaixadinhas no campo de futebol do SEPT.';
 descriptions[21] = 'Foto medindo a passarela entre o hall do prédio de ADM e a biblioteca com palitos de fósforo e o número de palitos.';
 descriptions[22] = 'Foto com a formanda Maria D. Barbosa.';
-descriptions[24] = 'Contar o número de bebedouros dentro do Espinha de Peixe.';
+descriptions[24] = 'Contar o número de bebedouros dentro do Espinha de Peixe, do prédio de administração até o final, no partamento de geologia.';
 descriptions[25] = 'Cada foto abraçando uma pessoa vale 30 pontos, acumulando no máximo 300 pontos para a atividade.';
 descriptions[26] = null;
 descriptions[27] = 'Um integrante da equipe deve raspar o cabelo.';
-descriptions[28] = 'Doação de peças de roupa diretamente no Centro Acadêmico durante a semana.';
-descriptions[29] = 'Doação de ração para cachorros até o dia da entrega na ONG.';
-descriptions[30] = 'Carimbo de um professor de cada uma das 5 áreas da química.'
-descriptions[31] = 'Assinatura pós graduandos, sendo uma por grupo de pesquisa.'
+descriptions[28] = 'Doação de peças de roupa, que devem ser feitas no Centro Acadêmico para contabilização dos pontos.';
+descriptions[29] = 'Doação de ração para cachorros até o dia da entrega na ONG. As doações devem ser feitas no Centro Acadêmico para contabilização dos pontos.';
+descriptions[30] = 'Carimbo de um professor de cada uma das 5 áreas da química. Mais informações no formulário de envio entregue aos padrinhos.'
+descriptions[31] = 'Assinatura pós graduandos, sendo uma por grupo de pesquisa. Mais informações no formulário de envio entregue aos padrinhos.'
 
 const points = [25,700,null,null,200,400,100,300,200,300,100,100,100,100,100,300,500,500,200,300,300,500,300,null,400,30,null,300,50,25,100,50];
 
