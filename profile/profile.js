@@ -196,6 +196,17 @@ function updateUserName() {
 function uploadImage(input) {
   var user = firebase.auth().currentUser;
   if (input.files && input.files[0]) {
+    // https://stackoverflow.com/a/44505315/6496084
+    var fileSize = input.files[0].size / 1024 / 1024; // in MB
+    if (fileSize > 10) {
+        alert('A imagem selecionada é muito grande. '+
+        'Apenas imagens com menos de 5 MB são aceitas. '+
+        'E cara, não sei como vc consegiu uma imagem desse tamanho. '+
+        'Tá enviando em RAW só pode. '+
+        'Ah, e só dá pra enviar em PNG, JPG e TIFF.'+
+        'O site vai até tentar enviar a foto, mas já te adianto que n vai salvar. Pega o tempo que vai demorar enviando pra fazer algo melhor.');
+    }
+
     var reader = new FileReader();
 
     reader.onload = function(e) {
