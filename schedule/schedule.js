@@ -158,6 +158,7 @@ function inflateInfo(eventNumber) {
     document.getElementById('eventTitle').innerHTML = snap.val().title;
     document.getElementById('eventDescription').innerHTML = (snap.val().desc) ? snap.val().desc : "Descrição não informada.";
     document.getElementById('eventDate').innerHTML = getDate(snap);
+    document.getElementById('eventLocation').innerHTML = (snap.val().location) ? snap.val().location : "Local não definido.";
     document.getElementById('cube').className = "mode"+snap.val().type;
     document.getElementById('modalImage').style.backgroundImage = "url('./files/image/bg"+snap.val().type+".svg')";
     document.getElementById('modalImage').style.backgroundColor = colors[snap.val().type];
