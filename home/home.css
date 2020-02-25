@@ -64,7 +64,7 @@ canvas {
 .podiumImage {
   width: 35vh;
   height: 35vh;
-  background-image: url('../files/teams/1.webp');
+  background-image: url('../files/teams/unknown.webp');
   background-size: contain;
   transition-duration: 0.3s;
 }
