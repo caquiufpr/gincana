@@ -716,8 +716,9 @@ i.menuIcons {
   }
   .actCards {
     width: 80vw;
+    max-height: unset;
+    min-height: 33vh;
     height: fit-content;
-    max-height: none;
   }
   .actIcon {
     width: 20vw;
