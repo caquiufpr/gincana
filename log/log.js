@@ -19,7 +19,7 @@ function getInfo() {
   for (var i = 0; i < 30; i++) {
     firebase.database().ref('approved/Activity '+i).orderByKey().limitToLast(50).on('child_added', function(s) {
       var by = s.val().sentBy;
-      var team = (s.val().team) ? s.val().team : "Esquipe não registrada";
+      var team = (s.val().team) ? s.val().team : s.key;
       var activity = s.ref.parent.key;
       var time = s.val().sentOn;
       var reasons = null;
@@ -28,7 +28,7 @@ function getInfo() {
     })
     firebase.database().ref('rejected/Activity '+i).orderByKey().limitToLast(50).on('child_added', function(s) {
       var by = s.val().sentBy;
-      var team = (s.val().team) ? s.val().team : "Esquipe não registrada";
+      var team = (s.val().team) ? s.val().team : s.key;
       var activity = s.ref.parent.key;
       var time = s.val().sentOn;
       var reasons = (s.val().reasons) ? s.val().reasons : "Motivos não registrados";
