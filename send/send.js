@@ -333,6 +333,7 @@ function uploadImage(input) {
         'E cara, não sei como vc consegiu uma imagem desse tamanho. '+
         'Tá enviando em RAW só pode. '+
         'Ah, e só dá pra enviar em PNG, JPG e TIFF (n sei quem usa esse último mas tá aí a opção).');
+        location.reload();
     }
 
     var reader = new FileReader();
