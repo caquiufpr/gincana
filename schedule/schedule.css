@@ -1,3 +1,7 @@
+.start {
+  max-width: 800px;
+}
+
 td, th {
   width: 14vw;
   text-align: center;
