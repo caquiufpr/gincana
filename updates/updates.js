@@ -66,17 +66,17 @@ fbRef1.on('child_added', function(snapshot) {
   buildMembers(displayName, userTeam);
 });
 
-var ggEasy = true;
+var ggEasy = [];
 function buildMembers(user, team) {
   const listHolder = document.getElementById('activityList'+team);
 
 
-  if (ggEasy) {
+  if (!ggEasy.includes(team)) {
   const title = document.createElement('h3');
   title.innerHTML = 'Componentes:';
   title.style.margin = '0px 0px 0px 1vw';
   listHolder.appendChild(title);
-  ggEasy = false;
+  ggEasy.push(team);
   }
 
   const componentsHolder = document.createElement('ul');
