@@ -66,13 +66,18 @@ fbRef1.on('child_added', function(snapshot) {
   buildMembers(displayName, userTeam);
 });
 
+var ggEasy = true;
 function buildMembers(user, team) {
   const listHolder = document.getElementById('activityList'+team);
 
+
+  if (ggEasy) {
   const title = document.createElement('h3');
   title.innerHTML = 'Componentes:';
   title.style.margin = '0px 0px 0px 1vw';
   listHolder.appendChild(title);
+  ggEasy = false;
+  }
 
   const componentsHolder = document.createElement('ul');
   const listItem = document.createElement('li');
