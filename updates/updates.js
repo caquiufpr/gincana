@@ -74,7 +74,7 @@ function buildMembers(user, team) {
   if (!ggEasy.includes(team)) {
   const title = document.createElement('h3');
   title.innerHTML = 'Componentes:';
-  title.style.margin = '0px 0px 0px 1vw';
+  title.style.margin = '20px 0px 0px 1vw';
   listHolder.appendChild(title);
   ggEasy.push(team);
   }
