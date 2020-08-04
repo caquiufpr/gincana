@@ -1,0 +1,1156 @@
+{
+  "approved" : {},
+  "rejected" : {},
+  "review" : {},
+  "schedule" : [ {
+    "end_time" : 0,
+    "start_time" : 0,
+    "type" : 6,
+    "week_day" : 0
+  }, {
+    "desc" : "Abertura da Semana de Recepção com a apresentação do Centro Acadêmico de Química e o Diretório Central Estudantil. Serão apresentadas as funções exercidas por estes grupos, assim como orientações gerais sobre a semana.",
+    "end_time" : 1,
+    "location" : "Auditório do DQ",
+    "start_time" : 1,
+    "title" : "CAQuí / DCE",
+    "type" : 1,
+    "week_day" : 0
+  }, {
+    "desc" : "Fala da coordenação do curso de Química, apresentando e orientando os calouros com relação ao curso.",
+    "end_time" : 2,
+    "location" : "Auditório do DQ",
+    "start_time" : 2,
+    "title" : "Coordenação",
+    "type" : 1,
+    "week_day" : 0
+  }, {
+    "desc" : "Apresentação do Departamento de Química",
+    "end_time" : 3,
+    "location" : "Auditório do DQ",
+    "start_time" : 3,
+    "title" : "Departamento",
+    "type" : 1,
+    "week_day" : 0
+  }, {
+    "desc" : "Apresentação da Atlética de Exatas, \"AAACE - Imortais\".<br/><br/><br/>Contato: <a href=\"https://www.instagram.com/imortaisufpr/?hl=en\" traget=\"_blank\">Instagram</a>",
+    "end_time" : 4,
+    "location" : "Auditório do DQ",
+    "start_time" : 4,
+    "title" : "Atlética",
+    "type" : 1,
+    "week_day" : 0
+  }, {
+    "desc" : "Momento para a integração entre os calouros, com apresentações, definição das equipes e orientações sobre o funcionamento da gincana.",
+    "end_time" : 6,
+    "location" : "Auditório do DQ",
+    "start_time" : 5,
+    "title" : "Integra Calouro",
+    "type" : 0,
+    "week_day" : 0
+  }, {
+    "desc" : "Horário para almoço. Lembramos que é importante que calouros levem um documento como RG e comprovante de matrícula para poderem fazer a refeição, pois a matrícula pode não ter entrado no sistema ainda.",
+    "end_time" : 10,
+    "location" : "Restaurante Universitário",
+    "start_time" : 7,
+    "title" : "Almoço",
+    "type" : 4,
+    "week_day" : 0
+  }, {
+    "desc" : "Apresentação do Programa de Extensão Tutorial (PET) de Química.<br/><br/><br/>Contato: <a href=\"http://www.petquimica.ufpr.br/\" traget=\"_blank\">site do PET Química</a>",
+    "end_time" : 11,
+    "location" : "Auditório do DQ",
+    "start_time" : 11,
+    "title" : "PET",
+    "type" : 1,
+    "week_day" : 0
+  }, {
+    "desc" : "Apresentação da Pró-reitoria de Assuntos Estudantis, com informações sobre suas funções na universidade e programas de bolsas.<br/><br/><br/>Contato: <a href=\"http://www.prae.ufpr.br/prae/\" target=\"_blank\">site da PRAE</a>",
+    "end_time" : 12,
+    "location" : "Auditório do DQ",
+    "start_time" : 12,
+    "title" : "PRAE",
+    "type" : 1,
+    "week_day" : 0
+  }, {
+    "desc" : "Apresentação da empresa júnior de química, a Isomeria.<br/><br/><br/>Contato: <a href=\"https://www.facebook.com/isomeriaej/\" target=\"_blank\">Facebook</a>",
+    "end_time" : 13,
+    "location" : "Auditório do DQ",
+    "start_time" : 13,
+    "title" : "Isomeria",
+    "type" : 1,
+    "week_day" : 0
+  }, {
+    "desc" : "Espaço dedicado à realização das tarefas da Gincana.",
+    "end_time" : 17,
+    "location" : "Vários locais",
+    "start_time" : 14,
+    "title" : "Gincana",
+    "type" : 0,
+    "week_day" : 0
+  }, {
+    "desc" : "Horário para o jantar. Lembramos que é importante que calouros levem um documento como RG e comprovante de matrícula para poderem fazer a refeição, pois a matrícula pode não ter entrado no sistema ainda.",
+    "end_time" : 20,
+    "location" : "Restaurante Universitário",
+    "start_time" : 18,
+    "title" : "Jantar",
+    "type" : 4,
+    "week_day" : 0
+  }, {
+    "desc" : "Abertura da Semana de Recepção com a apresentação do Centro Acadêmico de Química e o Diretório Central Estudantil. Serão apresentadas as funções exercidas por estes grupos, assim como orientações gerais sobre a semana.",
+    "end_time" : 21,
+    "location" : "Auditório do DQ",
+    "start_time" : 21,
+    "title" : "CAQuí / DCE",
+    "type" : 1,
+    "week_day" : 0
+  }, {
+    "desc" : "Fala da coordenação do curso de Química e do Departamento de Química, apresentando e orientando os calouros com relação ao curso.",
+    "end_time" : 22,
+    "location" : "Auditório do DQ",
+    "start_time" : 22,
+    "title" : "Coordenação e Departamento",
+    "type" : 1,
+    "week_day" : 0
+  }, {
+    "desc" : "Início das apresentações sobre as 5 áreas da química para o período noturno. A palestra tem como objetivo apresentar a área de Físico-Química.",
+    "end_time" : 24,
+    "location" : "Auditório do DQ",
+    "start_time" : 23,
+    "title" : "Físico-Química",
+    "type" : 3,
+    "week_day" : 0
+  }, {
+    "desc" : "Momento para a integração entre os calouros, com apresentações, definição das equipes e orientações sobre o funcionamento da gincana.",
+    "end_time" : 27,
+    "location" : "Auditório do DQ",
+    "start_time" : 25,
+    "title" : "Integra Calouro",
+    "type" : 0,
+    "week_day" : 0
+  }, null, {
+    "desc" : "Minicurso para a apresentação de materiais e procedimentos básicos de laboratório.",
+    "end_time" : 4,
+    "location" : "Laboratórios",
+    "start_time" : 0,
+    "title" : "Minicurso de Instrumentação",
+    "type" : 2,
+    "week_day" : 1
+  }, {
+    "desc" : "Início das apresentações sobre as 5 áreas da química para o período diurno. A palestra tem como objetivo apresentar a área de Química Orgânica.",
+    "end_time" : 6,
+    "location" : "Auditório do DQ",
+    "start_time" : 5,
+    "title" : "Orgânica",
+    "type" : 3,
+    "week_day" : 1
+  }, {
+    "desc" : "Horário para o almoço.",
+    "end_time" : 10,
+    "location" : "Restaurante Universitário",
+    "start_time" : 7,
+    "title" : "Almoço",
+    "type" : 4,
+    "week_day" : 1
+  }, {
+    "desc" : "Os estudantes poderão participar de atividades como dança e cheerleading.",
+    "end_time" : 17,
+    "location" : "Vários locais",
+    "start_time" : 11,
+    "title" : "Bloco de Atividades",
+    "type" : 2,
+    "week_day" : 1
+  }, {
+    "desc" : "Horário para o jantar",
+    "end_time" : 20,
+    "location" : "Restaurante Universitário",
+    "start_time" : 18,
+    "title" : "Jantar",
+    "type" : 4,
+    "week_day" : 1
+  }, {
+    "desc" : "Apresentação do Programa de Extensão Tutorial (PET) de Química.<br/><br/><br/>Contato: <a href=\"http://www.petquimica.ufpr.br/\" traget=\"_blank\">site do PET Química</a>",
+    "end_time" : 21,
+    "location" : "Auditório do DQ",
+    "start_time" : 21,
+    "title" : "PET",
+    "type" : 1,
+    "week_day" : 1
+  }, {
+    "desc" : "Apresentação da Pró-reitoria de Assuntos Estudantis, com informações sobre suas funções na universidade e programas de bolsas.<br/><br/><br/>Contato: <a href=\"http://www.prae.ufpr.br/prae/\" target=\"_blank\">site da PRAE</a>",
+    "end_time" : 22,
+    "location" : "Auditório do DQ",
+    "start_time" : 22,
+    "title" : "PRAE",
+    "type" : 1,
+    "week_day" : 1
+  }, {
+    "desc" : "Apresentação da área de Química Orgânica",
+    "end_time" : 24,
+    "location" : "Auditório do DQ",
+    "start_time" : 23,
+    "title" : "Orgânica",
+    "type" : 3,
+    "week_day" : 1
+  }, {
+    "desc" : "Minicurso para a apresentação de materiais e procedimentos básicos de laboratório.",
+    "end_time" : 27,
+    "location" : "Laboratórios",
+    "start_time" : 25,
+    "title" : "Minicurso de Instrumentação",
+    "type" : 2,
+    "week_day" : 1
+  }, {
+    "desc" : "",
+    "end_time" : 1,
+    "location" : "Auditório do DQ",
+    "start_time" : 0,
+    "title" : "ConVida",
+    "type" : 5,
+    "week_day" : 2
+  }, {
+    "desc" : "Nessa palestra serão apresentadas ferramentas virtuais que serão de grande importância ao longo da formação e utilização de serviços oferecidos pela UFPR.",
+    "end_time" : 3,
+    "location" : "Auditório do DQ",
+    "start_time" : 2,
+    "title" : "Nem Tudo Está no Google",
+    "type" : 5,
+    "week_day" : 2
+  }, {
+    "desc" : "Fala sobre a participação de mulheres na ciência.",
+    "end_time" : 4,
+    "location" : "Auditório do DQ",
+    "start_time" : 4,
+    "title" : "Mulheres na Ciência",
+    "type" : 5,
+    "week_day" : 2
+  }, {
+    "desc" : "Apresentação da área de Ensino de Química",
+    "end_time" : 6,
+    "location" : "Auditório do DQ",
+    "start_time" : 5,
+    "title" : "Ensino",
+    "type" : 3,
+    "week_day" : 2
+  }, {
+    "desc" : "Horário para o almoço",
+    "end_time" : 9,
+    "location" : "Restaurante Universitário",
+    "start_time" : 7,
+    "title" : "Almoço",
+    "type" : 4,
+    "week_day" : 2
+  }, {
+    "desc" : "Momento dedicado para a realização das tarefas da gincana.",
+    "end_time" : 17,
+    "location" : "Vários Locais",
+    "start_time" : 10,
+    "title" : "Gincana",
+    "type" : 0,
+    "week_day" : 2
+  }, {
+    "desc" : "Horário para o jantar",
+    "end_time" : 20,
+    "location" : "Restaurante Universitário",
+    "start_time" : 18,
+    "title" : "Jantar",
+    "type" : 4,
+    "week_day" : 2
+  }, {
+    "desc" : "Apresentação da empresa júnior de química, a Isomeria.<br/><br/><br/>Contato: <a href=\"https://www.facebook.com/isomeriaej/\" target=\"_blank\">Facebook</a>",
+    "end_time" : 21,
+    "location" : "Auditório do DQ",
+    "start_time" : 21,
+    "title" : "Isomeria",
+    "type" : 1,
+    "week_day" : 2
+  }, {
+    "desc" : "Fala sobre a participação de mulheres na ciência.",
+    "end_time" : 22,
+    "location" : "Auditório do DQ",
+    "start_time" : 22,
+    "title" : "Mulheres na Ciência",
+    "type" : 5,
+    "week_day" : 2
+  }, {
+    "desc" : "Apresentação da área de Ensino de Química.",
+    "end_time" : 24,
+    "location" : "Auditório do DQ",
+    "start_time" : 23,
+    "title" : "Ensino",
+    "type" : 3,
+    "week_day" : 2
+  }, {
+    "desc" : "Apresentação da área de Química Analítica",
+    "end_time" : 26,
+    "location" : "Auditório do DQ",
+    "start_time" : 25,
+    "title" : "Analítica",
+    "type" : 3,
+    "week_day" : 2
+  }, {
+    "end_time" : 27,
+    "start_time" : 27,
+    "type" : 6,
+    "week_day" : 2
+  }, {
+    "end_time" : 0,
+    "start_time" : 0,
+    "type" : 6,
+    "week_day" : 3
+  }, {
+    "desc" : "Palestra da empresa Química Inteligente.",
+    "end_time" : 2,
+    "location" : "Auditório do DQ",
+    "start_time" : 1,
+    "title" : "Química Inteligente",
+    "type" : 6,
+    "week_day" : 3
+  }, {
+    "desc" : "Apresentação do projeto de extensão Química na Prática.",
+    "end_time" : 3,
+    "location" : "Auditório do DQ",
+    "start_time" : 3,
+    "title" : "QuíPra",
+    "type" : 1,
+    "week_day" : 3
+  }, {
+    "desc" : "Conversa sobre a iniciação científica durante a graduação, explicando o que é e como participar.",
+    "end_time" : 4,
+    "location" : "Auditório do DQ",
+    "start_time" : 4,
+    "title" : "Iniciação Científica",
+    "type" : 5,
+    "week_day" : 3
+  }, {
+    "desc" : "Apresentação da área de Química Inorgânica.",
+    "end_time" : 6,
+    "location" : "Auditório do DQ",
+    "start_time" : 5,
+    "title" : "Inorgânica",
+    "type" : 3,
+    "week_day" : 3
+  }, {
+    "desc" : "Horário para o almoço.",
+    "end_time" : 9,
+    "location" : "RU Central",
+    "start_time" : 7,
+    "title" : "Almoço",
+    "type" : 4,
+    "week_day" : 3
+  }, {
+    "desc" : "Apresentação dos prédios da reitoria no Centro e integração entre calouros do diurno e veteranos.",
+    "end_time" : 17,
+    "location" : "Reitoria",
+    "start_time" : 10,
+    "title" : "Momento Integração",
+    "type" : 0,
+    "week_day" : 3
+  }, {
+    "desc" : "Horário para o jantar",
+    "end_time" : 20,
+    "location" : "Restaurante Universitário",
+    "start_time" : 18,
+    "title" : "Jantar",
+    "type" : 4,
+    "week_day" : 3
+  }, {
+    "desc" : "Conversa sobre a iniciação científica durante a graduação, explicando o que é e como participar.",
+    "end_time" : 21,
+    "location" : "Auditório do DQ",
+    "start_time" : 21,
+    "title" : "Iniciação Científica",
+    "type" : 5,
+    "week_day" : 3
+  }, {
+    "desc" : "Apresentação do projeto de extensão Química na Prática.",
+    "end_time" : 22,
+    "location" : "Auditório do DQ",
+    "start_time" : 22,
+    "title" : "QuíPra",
+    "type" : 1,
+    "week_day" : 3
+  }, {
+    "desc" : "Apresentação da área de Química Inorgânica.",
+    "end_time" : 24,
+    "location" : "Auditório do DQ",
+    "start_time" : 23,
+    "title" : "Inorgânica",
+    "type" : 3,
+    "week_day" : 3
+  }, {
+    "desc" : "Apresentação da Atlética de Exatas, \"AAACE - Imortais\". Contato: <a href=\"https://www.instagram.com/imortaisufpr/?hl=en\" traget=\"_blank\">Instagram</a>",
+    "end_time" : 25,
+    "location" : "Auditório do DQ",
+    "start_time" : 25,
+    "title" : "Atlética",
+    "type" : 1,
+    "week_day" : 3
+  }, {
+    "desc" : "Conversa com alunos já formados no curso de Química da UFPR.",
+    "end_time" : 27,
+    "location" : "Auditório do DQ",
+    "start_time" : 26,
+    "title" : "Conversa com Formados",
+    "type" : 5,
+    "week_day" : 3
+  }, {
+    "end_time" : 0,
+    "start_time" : 0,
+    "type" : 6,
+    "week_day" : 4
+  }, {
+    "desc" : "Palestra sobre o papel da química no trabalho da Polícia Científica do Paraná",
+    "end_time" : 2,
+    "location" : "Auditório do DQ",
+    "start_time" : 1,
+    "title" : "Polícia Federal",
+    "type" : 5,
+    "week_day" : 4
+  }, {
+    "desc" : "Conversa com alunos já formados no curso de Química da UFPR.",
+    "end_time" : 4,
+    "location" : "Auditório do DQ",
+    "start_time" : 3,
+    "title" : "Conversa com Formados",
+    "type" : 5,
+    "week_day" : 4
+  }, {
+    "desc" : "Apresentação da área de Química Analítica.",
+    "end_time" : 6,
+    "location" : "Auditório do DQ",
+    "start_time" : 5,
+    "title" : "Analítica",
+    "type" : 3,
+    "week_day" : 4
+  }, {
+    "desc" : "Horário para o almoço",
+    "end_time" : 10,
+    "location" : "Restaurante Universitário",
+    "start_time" : 7,
+    "title" : "Almoço",
+    "type" : 4,
+    "week_day" : 4
+  }, {
+    "desc" : "Apresentação da área de Físico-Química.",
+    "end_time" : 12,
+    "location" : "Auditório do DQ",
+    "start_time" : 11,
+    "title" : "Físico-Química",
+    "type" : 3,
+    "week_day" : 4
+  }, {
+    "desc" : "Espaço dedicado à realização das tarefas da gincana.",
+    "end_time" : 17,
+    "location" : "Vários locais",
+    "start_time" : 13,
+    "title" : "Gincana",
+    "type" : 0,
+    "week_day" : 4
+  }, {
+    "desc" : "Horário para o jantar.",
+    "end_time" : 20,
+    "location" : "Restaurante Universitário",
+    "start_time" : 18,
+    "title" : "Jantar",
+    "type" : 4,
+    "week_day" : 4
+  }, {
+    "desc" : "Integração entre calouros do noturno e veteranos.",
+    "end_time" : 23,
+    "location" : "Departamento de Química",
+    "start_time" : 21,
+    "title" : "Momento Integração",
+    "type" : 0,
+    "week_day" : 4
+  }, {
+    "desc" : "Atividades para o noturno.",
+    "end_time" : 27,
+    "location" : "Departamento de Química",
+    "start_time" : 24,
+    "title" : "Bloco de Atividades",
+    "type" : 2,
+    "week_day" : 4
+  } ],
+  "settings" : {
+    "allow_send" : false,
+    "login" : false,
+    "we_have_a_winner" : true
+  },
+  "teams" : [ {
+    "name" : "Hidrogênio",
+    "points" : 13050,
+    "tasks" : {
+      "5" : {
+        "done" : "Ok",
+        "time" : 1583584121244
+      },
+      "7" : {
+        "done" : "Ok",
+        "time" : 1583450002527
+      },
+      "8" : {
+        "done" : "Ok",
+        "time" : 1583555280097
+      },
+      "9" : {
+        "done" : "Ok",
+        "time" : 1583584575721
+      },
+      "10" : {
+        "done" : "Ok",
+        "time" : 1583584675312
+      },
+      "11" : {
+        "done" : "Ok",
+        "time" : 1583585228950
+      },
+      "12" : {
+        "done" : "Ok",
+        "time" : 1583585306709
+      },
+      "13" : {
+        "done" : "Ok",
+        "time" : 1583585465037
+      },
+      "15" : {
+        "done" : "Ok",
+        "time" : 1583555375747
+      },
+      "17" : {
+        "done" : "Ok",
+        "time" : 1583584884760
+      },
+      "19" : {
+        "done" : "Ok",
+        "time" : 1583587478899
+      },
+      "23" : {
+        "done" : "Ok",
+        "time" : 1583554949617
+      },
+      "25" : {
+        "done" : "Ok",
+        "time" : 1583554815074
+      },
+      "28" : {
+        "done" : "Ok",
+        "time" : 1583554589414
+      }
+    }
+  }, {
+    "name" : "Hélio",
+    "points" : 5695,
+    "tasks" : {
+      "5" : {
+        "done" : "Ok",
+        "time" : 1583584032365
+      },
+      "7" : {
+        "done" : "Ok",
+        "time" : 1583362179993
+      },
+      "8" : {
+        "done" : "Ok",
+        "time" : 1583362326298
+      },
+      "10" : {
+        "done" : "Ok",
+        "time" : 1583362928878
+      },
+      "11" : {
+        "done" : "Ok",
+        "time" : 1583363101234
+      },
+      "12" : {
+        "done" : "Ok",
+        "time" : 1583363915345
+      },
+      "13" : {
+        "done" : "Ok",
+        "time" : 1583268148295
+      },
+      "15" : {
+        "done" : "Ok",
+        "time" : 1583267251697
+      },
+      "16" : {
+        "done" : "Ok",
+        "time" : 1583585042524
+      },
+      "19" : {
+        "done" : "Ok",
+        "time" : 1583586875860
+      },
+      "28" : {
+        "done" : "Ok",
+        "time" : 1583363303954
+      }
+    }
+  }, {
+    "name" : "Lítio",
+    "points" : 2050,
+    "tasks" : {
+      "7" : {
+        "done" : "Ok",
+        "time" : 1583216555610
+      },
+      "8" : {
+        "done" : "Ok",
+        "time" : 1583216586349
+      },
+      "9" : {
+        "done" : "Ok",
+        "time" : 1583216594298
+      },
+      "10" : {
+        "done" : "Ok",
+        "time" : 1583216606237
+      },
+      "11" : {
+        "done" : "Ok",
+        "time" : 1583363235003
+      },
+      "12" : {
+        "done" : "Ok",
+        "time" : 1583216622822
+      },
+      "13" : {
+        "done" : "Ok",
+        "time" : 1583268129012
+      },
+      "19" : {
+        "done" : "Ok",
+        "time" : 1583586896420
+      },
+      "23" : {
+        "done" : "Ok",
+        "time" : 1583216683287
+      }
+    }
+  }, {
+    "name" : "Berílio",
+    "points" : 8650,
+    "tasks" : [ null, null, null, null, null, {
+      "done" : "Ok",
+      "time" : 1583266517084
+    }, {
+      "done" : "Ok",
+      "time" : 1583266613377
+    }, {
+      "done" : "Ok",
+      "time" : 1583266318639
+    }, {
+      "done" : "Ok",
+      "time" : 1583266329483
+    }, {
+      "done" : "Ok",
+      "time" : 1583362709995
+    }, {
+      "done" : "Ok",
+      "time" : 1583216618844
+    }, {
+      "done" : "Ok",
+      "time" : 1583363215898
+    }, {
+      "done" : "Ok",
+      "time" : 1583216627933
+    }, {
+      "done" : "Ok",
+      "time" : 1583585575576
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583555448171
+    }, {
+      "done" : "Ok",
+      "time" : 1583585053489
+    }, {
+      "done" : "Ok",
+      "time" : 1583584838040
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583360300963
+    }, {
+      "done" : "Ok",
+      "time" : 1583555774398
+    }, {
+      "done" : "Ok",
+      "time" : 1583585733267
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583267016090
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583216707189
+    }, null, null, {
+      "done" : "Ok",
+      "time" : 1583554580486
+    } ]
+  }, {
+    "name" : "Boro",
+    "points" : 6905,
+    "tasks" : [ null, null, null, null, null, {
+      "done" : "Ok",
+      "time" : 1583584089415
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583555248276
+    }, {
+      "done" : "Ok",
+      "time" : 1583555288591
+    }, {
+      "done" : "Ok",
+      "time" : 1583584541686
+    }, {
+      "done" : "Ok",
+      "time" : 1583584700125
+    }, {
+      "done" : "Ok",
+      "time" : 1583585246687
+    }, {
+      "done" : "Ok",
+      "time" : 1583585340891
+    }, {
+      "done" : "Ok",
+      "time" : 1583585492464
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583555516401
+    }, null, null, null, {
+      "done" : "Ok",
+      "time" : 1583586958757
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583585722287
+    }, {
+      "done" : "Ok",
+      "time" : 1583587765666
+    }, {
+      "done" : "Ok",
+      "time" : 1583554983473
+    } ]
+  }, {
+    "name" : "Carbono",
+    "points" : 3625,
+    "tasks" : {
+      "7" : {
+        "done" : "Ok",
+        "time" : 1583362144630
+      },
+      "8" : {
+        "done" : "Ok",
+        "time" : 1583362301452
+      },
+      "9" : {
+        "done" : "Ok",
+        "time" : 1583362659595
+      },
+      "10" : {
+        "done" : "Ok",
+        "time" : 1583584710551
+      },
+      "11" : {
+        "done" : "Ok",
+        "time" : 1583363135916
+      },
+      "12" : {
+        "done" : "Ok",
+        "time" : 1583363871370
+      },
+      "13" : {
+        "done" : "Ok",
+        "time" : 1583417897454
+      },
+      "15" : {
+        "done" : "Ok",
+        "time" : 1583417638374
+      },
+      "19" : {
+        "done" : "Ok",
+        "time" : 1583586862231
+      },
+      "21" : {
+        "done" : "Ok",
+        "time" : 1583585673732
+      },
+      "23" : {
+        "done" : "Ok",
+        "time" : 1583364374056
+      }
+    }
+  }, {
+    "name" : "Nitrogênio",
+    "points" : 5300,
+    "tasks" : [ null, null, null, null, null, {
+      "done" : "Ok",
+      "time" : 1583266577304
+    }, {
+      "done" : "Ok",
+      "time" : 1583266622401
+    }, {
+      "done" : "Ok",
+      "time" : 1583266341475
+    }, {
+      "done" : "Ok",
+      "time" : 1583266350898
+    }, {
+      "done" : "Ok",
+      "time" : 1583362672773
+    }, {
+      "done" : "Ok",
+      "time" : 1583267108732
+    }, {
+      "done" : "Ok",
+      "time" : 1583363193787
+    }, {
+      "done" : "Ok",
+      "time" : 1583267820423
+    }, {
+      "done" : "Ok",
+      "time" : 1583585608270
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583555501634
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583584849363
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583587420551
+    }, null, null, {
+      "done" : "Ok",
+      "time" : 1583587750946
+    }, {
+      "done" : "Ok",
+      "time" : 1583554938438
+    } ]
+  }, {
+    "name" : "Oxigênio",
+    "points" : 5225,
+    "tasks" : {
+      "7" : {
+        "done" : "Ok",
+        "time" : 1583418188546
+      },
+      "8" : {
+        "done" : "Ok",
+        "time" : 1583418270594
+      },
+      "9" : {
+        "done" : "Ok",
+        "time" : 1583418355582
+      },
+      "10" : {
+        "done" : "Ok",
+        "time" : 1583418074326
+      },
+      "11" : {
+        "done" : "Ok",
+        "time" : 1583417990345
+      },
+      "12" : {
+        "done" : "Ok",
+        "time" : 1583417960055
+      },
+      "13" : {
+        "done" : "Ok",
+        "time" : 1583585586196
+      },
+      "15" : {
+        "done" : "Ok",
+        "time" : 1583417574815
+      },
+      "19" : {
+        "done" : "Ok",
+        "time" : 1583586885483
+      },
+      "23" : {
+        "done" : "Ok",
+        "time" : 1583417487462
+      }
+    }
+  }, {
+    "name" : "Flúor",
+    "points" : 9150,
+    "tasks" : [ null, null, null, null, null, {
+      "done" : "Ok",
+      "time" : 1583584111713
+    }, {
+      "done" : "Ok",
+      "time" : 1583266638422
+    }, {
+      "done" : "Ok",
+      "time" : 1583266302999
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583362651211
+    }, {
+      "done" : "Ok",
+      "time" : 1583418098241
+    }, {
+      "done" : "Ok",
+      "time" : 1583418025501
+    }, {
+      "done" : "Ok",
+      "time" : 1583417937870
+    }, {
+      "done" : "Ok",
+      "time" : 1583268169030
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583417519242
+    }, {
+      "done" : "Ok",
+      "time" : 1583585078952
+    }, {
+      "done" : "Ok",
+      "time" : 1583584871071
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583586992907
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583585686517
+    }, {
+      "done" : "Ok",
+      "time" : 1583587784411
+    }, {
+      "done" : "Ok",
+      "time" : 1583417462113
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583554796394
+    } ]
+  }, {
+    "name" : "Neônio",
+    "points" : 3520,
+    "tasks" : {
+      "5" : {
+        "done" : "Ok",
+        "time" : 1583584021765
+      },
+      "7" : {
+        "done" : "Ok",
+        "time" : 1583555238748
+      },
+      "8" : {
+        "done" : "Ok",
+        "time" : 1583555319232
+      },
+      "9" : {
+        "done" : "Ok",
+        "time" : 1583362605129
+      },
+      "10" : {
+        "done" : "Ok",
+        "time" : 1583267139976
+      },
+      "11" : {
+        "done" : "Ok",
+        "time" : 1583363060716
+      },
+      "12" : {
+        "done" : "Ok",
+        "time" : 1583267835172
+      },
+      "15" : {
+        "done" : "Ok",
+        "time" : 1583555420240
+      },
+      "19" : {
+        "done" : "Ok",
+        "time" : 1583587353291
+      },
+      "22" : {
+        "done" : "Ok",
+        "time" : 1583587737819
+      },
+      "23" : {
+        "done" : "Ok",
+        "time" : 1583267232050
+      }
+    }
+  }, {
+    "name" : "Sódio",
+    "points" : 5600,
+    "tasks" : [ null, null, null, null, null, {
+      "done" : "Ok",
+      "time" : 1583584079628
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583362206989
+    }, {
+      "done" : "Ok",
+      "time" : 1583362354232
+    }, {
+      "done" : "Ok",
+      "time" : 1583584517038
+    }, {
+      "done" : "Ok",
+      "time" : 1583365277880
+    }, {
+      "done" : "Ok",
+      "time" : 1583363174023
+    }, {
+      "done" : "Ok",
+      "time" : 1583364077225
+    }, {
+      "done" : "Ok",
+      "time" : 1583363783966
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583363766568
+    }, {
+      "done" : "Ok",
+      "time" : 1583585065288
+    }, {
+      "done" : "Ok",
+      "time" : 1583584859165
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583586919549
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583585699255
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583554974306
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583554843168
+    } ]
+  }, {
+    "name" : "Magnésio",
+    "points" : 925,
+    "tasks" : {
+      "25" : {
+        "done" : "Ok",
+        "time" : 1583554879517
+      }
+    }
+  }, {
+    "name" : "Alumínio",
+    "points" : 8415,
+    "tasks" : [ null, null, null, null, null, {
+      "done" : "Ok",
+      "time" : 1583584055762
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583449983178
+    }, {
+      "done" : "Ok",
+      "time" : 1583450031742
+    }, {
+      "done" : "Ok",
+      "time" : 1583450056903
+    }, {
+      "done" : "Ok",
+      "time" : 1583362969671
+    }, {
+      "done" : "Ok",
+      "time" : 1583598926465
+    }, {
+      "done" : "Ok",
+      "time" : 1583364114641
+    }, null, null, {
+      "done" : "Ok",
+      "time" : 1583555539802
+    }, {
+      "done" : "Ok",
+      "time" : 1583585100505
+    }, null, null, {
+      "done" : "Ok",
+      "time" : 1583587451781
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583585754197
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583364385780
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583554858124
+    } ]
+  }, {
+    "name" : "Silício",
+    "points" : 425,
+    "tasks" : {
+      "10" : {
+        "done" : "Ok",
+        "time" : 1583362950898
+      },
+      "12" : {
+        "done" : "Ok",
+        "time" : 1583363888677
+      }
+    }
+  }, {
+    "name" : "Fósforo",
+    "points" : 11440,
+    "tasks" : [ null, null, null, null, null, {
+      "done" : "Ok",
+      "time" : 1583584068415
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583362120745
+    }, {
+      "done" : "Ok",
+      "time" : 1583362291462
+    }, {
+      "done" : "Ok",
+      "time" : 1583362595729
+    }, {
+      "done" : "Ok",
+      "time" : 1583362938439
+    }, {
+      "done" : "Ok",
+      "time" : 1583363038059
+    }, {
+      "done" : "Ok",
+      "time" : 1583364042490
+    }, {
+      "done" : "Ok",
+      "time" : 1583585513597
+    }, null, {
+      "done" : "Ok",
+      "time" : 1583417602574
+    } ]
+  }, {
+    "name" : "Enxofre",
+    "points" : 7550,
+    "tasks" : {
+      "5" : {
+        "done" : "Ok",
+        "time" : 1583584044026
+      },
+      "8" : {
+        "done" : "Ok",
+        "time" : 1583362364487
+      },
+      "9" : {
+        "done" : "Ok",
+        "time" : 1583418327780
+      },
+      "10" : {
+        "done" : "Ok",
+        "time" : 1583584739044
+      },
+      "11" : {
+        "done" : "Ok",
+        "time" : 1583363226297
+      },
+      "12" : {
+        "done" : "Ok",
+        "time" : 1583364099661
+      },
+      "15" : {
+        "done" : "Ok",
+        "time" : 1583555575391
+      },
+      "25" : {
+        "done" : "Ok",
+        "time" : 1583554892950
+      }
+    }
+  } ],
+  "users" : {}
+}
