@@ -1,0 +1,48 @@
+{
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    "users": {
+      ".read": true,
+      ".write": false,
+      "$user_id": {
+        ".write": "$user_id === auth.uid"
+      }
+    },
+    "latest_changes": {
+      ".read": true,
+      ".write": false
+    },
+    "schedule": {
+    ".read": true,
+    ".write": false
+    },
+    "teams": {
+      ".read": true,
+      ".write": "auth.uid === '{ID do usuário}'"
+    },
+    "review": {
+      ".read": "auth.uid === '{ID do usuário}'",
+      ".write": true
+    },
+    "approved": {
+      ".read": true,
+      ".write": "auth.uid === '{ID do usuário}'"
+    },
+    "rejected": {
+      ".read": true,
+      ".write": "auth.uid === '{ID do usuário}'"
+    },
+    "last_updated": {
+      ".read": true,
+      ".write": "auth.uid === '{ID do usuário}'"
+    },
+    "settings": {
+    	".read": true,
+      ".write": false
+    },
+    "posts": {
+      ".read": true,
+      ".write": "auth.uid === '{ID do usuário}'"
+    }
+  }
+}
